@@ -1,0 +1,10 @@
+<div class="landing-photo">
+  <img src="assets/bezridicaku.png">
+  <h1>Bez řidičáku</h1>
+</div>
+<p>Elektrické skútry bez řidičského průkazu (omezení rychlosti na 25Km/hod), jsou jako stvořené pro každodenní městskou dopravu. Jejich hlavní výhodou je rychlý a snadný pohyb v rušném městském provozu. Díky tichého a výkonného elektrického pohonu se budete pohybovat rychle s minimálními emise a velmi nízkými náklady na spotřebu. Velice kompaktním design zaručuje to, že ušetříte čas nejen díky rychlému proplétání městskými uličkami, ale také se vyhnete zbytečným dopravním zácpám, takže budete cestovat jednoduše a efektivně</p>
+<div class="product_list grid">
+  <div class="product_card" *ngFor="let product of noLicenseProducts$ | async">
+    <app-product-card [product]="product"></app-product-card>
+  </div>
+</div>

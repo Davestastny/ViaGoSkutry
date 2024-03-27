@@ -1,0 +1,21 @@
+<div class="landing-photo">
+  <img src="assets/modely2.jpg" alt="" class="hero-img">
+  <h1>Modely</h1>
+</div>
+<p>
+  <b>Ve srovnání s konkurenčními modely garantujeme vynikající poměr cena/výkon</b><br>
+  Jsme specialisti v oblasti prodeje elektrických motorek a skútrů. Společným jmenovatelem našich motorek ViaGo jsou špičkové jízdní vlastnosti, dlouhý dojezd a velmi úsporný provoz.
+  <br>
+  <br>
+  <b>Všechny motorky ViaGo obsahují již v základní výbavě moderní Lithium-iontové (Li-ion) baterie,</b><br>
+  které oproti starším typům gelových baterií mají mnohem lepší provozní vlastnosti – rychlejší dobíjení, mnohem nižší hmotnost při stejné kapacitě, snadnou vyjímatelnost a pohodlné nabíjení doma nebo v kanceláři, více nabíjecích cyklů i delší životnost. Při výběru tedy doporučujeme sledovat tento parametr, neboť většina elektrických motorek v ČR se ještě prodává se starším typem baterií, který je sice výrazně levnější, ale pro samotný provoz mnohem horší.
+  <br>
+  <br>
+  <b>Každá motorka Viago je před odesláním odborně sestavena a otestována</b><br>
+  Budete tak mít jistotu, že motorka bude doručena v perfektním stavu a plně připravená k provozu. Proto je doba doručení 5-7 pracovních dní od objednání.
+</p>
+<div class="product_list grid">
+  <div class="product_card" *ngFor="let product of products$ | async">
+    <app-product-card [product]="product"/>
+  </div>
+</div>

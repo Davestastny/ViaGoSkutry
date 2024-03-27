@@ -1,0 +1,7 @@
+<div class="product_card-content grid" (click)="navigateToProductDetail(product.slug)">
+    <img [src]="product.image" [alt]="product.name">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.price }} Kč</p>
+  <a (click)="addToCart($event)">Do košíku</a> <!-- Změněno z <a> na <button> -->
+  </div>
+

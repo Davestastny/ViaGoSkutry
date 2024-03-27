@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+.logophoto {
+  display: flex;
+  justify-content: center; /* Centers the child horizontally */
+  align-items: center; /* Centers the child vertically */
+}
+
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.ContactText {
+  text-align: center;
+}

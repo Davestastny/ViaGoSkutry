@@ -1,0 +1,20 @@
+<h1>Detail Produktu</h1>
+<div class="container" *ngIf="product$ | async as product">
+  <img [src]="product.image" [alt]="product.name" width="60%">
+  <div class="product-details">
+    <div>
+      <div class="price">od {{ product.price }} Kč</div>
+      <a (click)="addToCart($event)">Do košíku</a>
+      <dl class="details">
+        <h2>{{ product.name }}</h2>
+        <div *ngFor="let parameter of parseParameters(product.parameters) | keyvalue">
+          <dt>{{ parameter.key }}:</dt>
+          <dd>{{ parameter.value }}</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+<p *ngIf="product$ | async as product">
+  {{ product.description}}
+</p>

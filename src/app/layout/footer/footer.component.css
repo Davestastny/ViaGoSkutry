@@ -1,0 +1,30 @@
+footer {
+  width: 100%;
+  background-color: #FFEE00;
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+}
+
+footer .footer_content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+footer h2,
+footer a {
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  footer .footer_content {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+}

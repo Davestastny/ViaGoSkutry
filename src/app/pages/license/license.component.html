@@ -1,0 +1,16 @@
+<div class="landing-photo">
+  <img src="assets/sridicakem.png" alt="">
+<h1>S řidičákem</h1>
+</div>
+<div class="license-text">
+<p>
+  <b>Revoluční způsob dopravy, který vám umožní objevit nové rozměry pohodlí, svobody a ekologičnosti!</b><br>
+<br>
+  Elektrické motorky s řidičským průkazem jsou ideální volbou pro ty, kteří hledají spolehlivý a rychlý způsob dopravy po městě, ale i mimo něj na delší vzdálenosti. Tyto motorky jsou navrženy s ohledem na pohodlí a styl tak, aby nabídly plynulou a komfortní jízdu obohacenou o atraktivní design. Díky výkonným bateriím a elektrickým motorům, dokážou některé modely jet rychlostí až 80 km/h. U některých motorek je také možnost dvojité baterie, takže u některých modelů může být dojezd až velice pěkných 100 km.
+</p>
+</div>
+<div class="product_list grid">
+  <div class="product_card" *ngFor="let product of licenseProducts$ | async">
+    <app-product-card [product]="product"></app-product-card>
+  </div>
+</div>
